@@ -4,7 +4,7 @@
   "description": "A basic Mocha Chai testing setup",
   "main": "index.js",
   "scripts": {
-    "test": "mocha .coverage -R JSON > .coverage/test.json"
+    "test": "mocha .coverage -R json > .coverage/test.json"
   },
   "repository": {
     "type": "git",

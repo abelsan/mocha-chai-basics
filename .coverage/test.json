@@ -5,15 +5,15 @@
     "passes": 3,
     "pending": 0,
     "failures": 1,
-    "start": "2016-09-21T18:51:19.638Z",
-    "end": "2016-09-21T18:51:19.649Z",
-    "duration": 11
+    "start": "2016-09-21T20:58:24.693Z",
+    "end": "2016-09-21T20:58:24.705Z",
+    "duration": 12
   },
   "tests": [
     {
       "title": "Test for String",
       "fullTitle": "BDD First Name and Last Name Test for String",
-      "duration": 1,
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
@@ -40,7 +40,7 @@
     {
       "title": "Test for Length of 3",
       "fullTitle": "BDD Types of Cheese Test for Length of 3",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     }
@@ -65,7 +65,7 @@
     {
       "title": "Test for String",
       "fullTitle": "BDD First Name and Last Name Test for String",
-      "duration": 1,
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
@@ -79,7 +79,7 @@
     {
       "title": "Test for Length of 3",
       "fullTitle": "BDD Types of Cheese Test for Length of 3",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     }

@@ -4,4 +4,8 @@ node_js:
   - "iojs"
 script: npm test  
 addons:
-  artifacts: true
+  artifacts:
+    # ...
+    paths:
+    - $HOME/.coverage/
+    - $HOME/.coverage/test.json

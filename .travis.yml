@@ -3,3 +3,5 @@ node_js:
   - "node"
   - "iojs"
 script: npm test  
+addons:
+  artifacts: true

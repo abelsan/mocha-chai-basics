@@ -26,9 +26,9 @@ describe('BDD', function() {
 
 describe('BDD', function() {
   describe('First Name and Last Name', function() {
-    it('Test for Length of 10', function() {
+    it('Test for Length of 12', function() {
 
-		name.should.have.length(10);
+		name.should.have.length(12);
 
     });
   });

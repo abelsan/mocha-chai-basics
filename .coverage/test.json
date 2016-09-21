@@ -1,0 +1,87 @@
+{
+  "stats": {
+    "suites": 8,
+    "tests": 4,
+    "passes": 3,
+    "pending": 0,
+    "failures": 1,
+    "start": "2016-09-21T18:51:19.638Z",
+    "end": "2016-09-21T18:51:19.649Z",
+    "duration": 11
+  },
+  "tests": [
+    {
+      "title": "Test for String",
+      "fullTitle": "BDD First Name and Last Name Test for String",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Test for Peter Parker",
+      "fullTitle": "BDD First Name and Last Name Test for Peter Parker",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Test for Length of 10",
+      "fullTitle": "BDD First Name and Last Name Test for Length of 10",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 'peter parker' to have a length of 10 but got 12",
+        "showDiff": false,
+        "actual": 12,
+        "expected": 10,
+        "stack": "AssertionError: expected 'peter parker' to have a length of 10 but got 12\n    at Context.<anonymous> (.coverage/test.js:31:20)"
+      }
+    },
+    {
+      "title": "Test for Length of 3",
+      "fullTitle": "BDD Types of Cheese Test for Length of 3",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "Test for Length of 10",
+      "fullTitle": "BDD First Name and Last Name Test for Length of 10",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 'peter parker' to have a length of 10 but got 12",
+        "showDiff": false,
+        "actual": 12,
+        "expected": 10,
+        "stack": "AssertionError: expected 'peter parker' to have a length of 10 but got 12\n    at Context.<anonymous> (.coverage/test.js:31:20)"
+      }
+    }
+  ],
+  "passes": [
+    {
+      "title": "Test for String",
+      "fullTitle": "BDD First Name and Last Name Test for String",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Test for Peter Parker",
+      "fullTitle": "BDD First Name and Last Name Test for Peter Parker",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Test for Length of 3",
+      "fullTitle": "BDD Types of Cheese Test for Length of 3",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}

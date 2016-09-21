@@ -7,5 +7,5 @@ addons:
   artifacts:
     # ...
     paths:
-    - $HOME/.coverage/
-    - $HOME/.coverage/test.json
+    - $TRAVIS_BUILD_DIR/.coverage/
+    - $TRAVIS_BUILD_DIR/.coverage/test.json

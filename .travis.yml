@@ -22,6 +22,8 @@ after_script:
   - echo } >> travis.json
   - curl -H "Content-Type:application/json" --data @$TRAVIS_BUILD_DIR/.coverage/test.json http://arlington3.mit.edu:3003/  
   - curl -H "Content-Type:application/json" --data @$TRAVIS_BUILD_DIR/travis.json http://arlington3.mit.edu:3003/    
+notifications:
+  webhooks: http://arlington3.mit.edu:3003/
 addons:
   artifacts:
     # ...

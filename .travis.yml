@@ -5,7 +5,6 @@ before_script:
   - "export TRAVIS_COMMIT_MSG=\"$(git log --format=%B --no-merges -n 1)\""
   - echo $TRAVIS_COMMIT_MSG > payload.txt
   - curl -H "Content-Type:application/json" -X POST -d '{"username":"peter"}' http://arlington3.mit.edu:3001/
-  - curl -H "Content-Type:application/text" -X POST -d $TRAVIS_COMMIT_MSG http://arlington3.mit.edu:3001/  
 script: npm test  
 addons:
   artifacts:

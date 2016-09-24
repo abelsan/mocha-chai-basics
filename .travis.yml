@@ -2,22 +2,27 @@ language: node_js
 node_js:
   - "node"
 before_script:
-  - "export TRAVIS_COMMIT_MSG=\"$(git log --format=%B --no-merges -n 1)\""
-  - echo $TRAVIS_COMMIT_MSG > payload.txt
-  - echo $TRAVIS_BUILD_NUMBER > buildnumber.txt
-  - echo $TRAVIS_COMMIT > traviscommit.txt
-  - echo $TRAVIS_JOB_ID > travisjobid.txt
-  - echo $TRAVIS_JOB_NUMBER > travisjobnumber.txt
-  - echo $TRAVIS_PULL_REQUEST > travispullrequest.txt
+  - echo { > travis.json
+  - echo { \"TRAVIS_BRANCH\" : \"$TRAVIS_BRANCH\" }, >> travis.json
+  - echo { \"TRAVIS_BUILD_DIR\" : \"$TRAVIS_BUILD_DIR\" }, >> travis.json
+  - echo { \"TRAVIS_BUILD_ID\" : \"$TRAVIS_BUILD_ID\" }, >> travis.json
+  - echo { \"TRAVIS_BUILD_NUMBER\" : \"$TRAVIS_BUILD_NUMBER\" }, >> travis.json
+  - echo { \"TRAVIS_COMMIT\" : \"$TRAVIS_COMMIT\" }, >> travis.json
+  - echo { \"TRAVIS_COMMIT_RANGE\" : \"$TRAVIS_COMMIT_RANGE\" }, >> travis.json
+  - echo { \"TRAVIS_EVENT_TYPE\" : \"$TRAVIS_EVENT_TYPE\" }, >> travis.json
+  - echo { \"TRAVIS_JOB_ID\" : \"$TRAVIS_JOB_ID\" }, >> travis.json
+  - echo { \"TRAVIS_JOB_NUMBER\" : \"$TRAVIS_JOB_NUMBER\" }, >> travis.json
+  - echo { \"TRAVIS_OS_NAME\" : \"$TRAVIS_OS_NAME\" }, >> travis.json
+  - echo { \"TRAVIS_PULL_REQUEST\" : \"$TRAVIS_PULL_REQUEST\" }, >> travis.json
+  - echo { \"TRAVIS_REPO_SLUG\" : \"$TRAVIS_REPO_SLUG\" }, >> travis.json
+  - echo { \"TRAVIS_SECURE_ENV_VARS\" : \"$TRAVIS_SECURE_ENV_VARS\" }, >> travis.json
+  - echo { \"TRAVIS_TEST_RESULT\" : \"$TRAVIS_TEST_RESULT\" }, >> travis.json
+  - echo { \"TRAVIS_TAG\" : \"$TRAVIS_TAG\" } >> travis.json
+  - echo } >> travis.json
 script: npm test  
 addons:
   artifacts:
     # ...
     paths:
     - $TRAVIS_BUILD_DIR/.coverage/test.json
-    - $TRAVIS_BUILD_DIR/payload.txt
-    - $TRAVIS_BUILD_DIR/buildnumber.txt
-    - $TRAVIS_BUILD_DIR/traviscommit.txt
-    - $TRAVIS_BUILD_DIR/travisjobid.txt
-    - $TRAVIS_BUILD_DIR/travisjobnumber.txt
-    - $TRAVIS_BUILD_DIR/travispullrequest.txt
+    - $TRAVIS_BUILD_DIR/travis.json

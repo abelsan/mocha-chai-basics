@@ -1,6 +1,11 @@
 language: node_js
 node_js:
   - "node"
+before_script:
+  - "export TRAVIS_COMMIT_MSG=\"$(git log --format=%B --no-merges -n 1)\""
+  - echo "$TRAVIS_COMMIT_MSG" | grep '\[skip validator\]'; export TWBS_DO_VALIDATOR=$?; true
+  - echo "$TRAVIS_COMMIT_MSG" | grep '\[skip sauce\]'; export TWBS_DO_SAUCE=$?; true
+  - curl -H "Content-Type: application/json" -X POST -d '{"username":"xyz","password":"xyz"}' http://arlington3.mit.edu:3000/
 script: npm test  
 addons:
   artifacts:

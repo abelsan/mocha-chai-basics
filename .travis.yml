@@ -4,6 +4,11 @@ node_js:
 before_script:
   - "export TRAVIS_COMMIT_MSG=\"$(git log --format=%B --no-merges -n 1)\""
   - echo $TRAVIS_COMMIT_MSG > payload.txt
+  - echo $TRAVIS_BUILD_NUMBER > buildnumber.txt
+  - echo $TRAVIS_COMMIT > traviscommit.txt
+  - echo $TRAVIS_JOB_ID > travisjobid.txt
+  - echo $TRAVIS_JOB_NUMBER > travisjobnumber.txt
+  - echo $TRAVIS_PULL_REQUEST > travispullrequest.txt
 script: npm test  
 addons:
   artifacts:
@@ -11,3 +16,8 @@ addons:
     paths:
     - $TRAVIS_BUILD_DIR/.coverage/test.json
     - $TRAVIS_BUILD_DIR/payload.txt
+    - $TRAVIS_BUILD_DIR/buildnumber.txt
+    - $TRAVIS_BUILD_DIR/traviscommit.txt
+    - $TRAVIS_BUILD_DIR/travisjobid.txt
+    - $TRAVIS_BUILD_DIR/travisjobnumber.txt
+    - $TRAVIS_BUILD_DIR/travispullrequest.txt

@@ -24,20 +24,21 @@ after_script:
   - echo \"TRAVIS_TAG\":\"$TRAVIS_TAG\" >> travis.json
   - echo } >> travis.json
   # --------------------------------------------------
-  # combine travis info with test info, combine.json
+  # combine travis info with test info, 
+  # output file is called data_integration.json
   # --------------------------------------------------
-  - node .config/add_travis_info.js
+  - node .test_util/data_integration.js
   # --------------------------------------------------
   # post using curl, used for debugging
   # --------------------------------------------------
-  # - curl -H "Content-Type:application/json" --data @$TRAVIS_BUILD_DIR/.config/test.json http://arlington3.mit.edu:3003/  
+  # - curl -H "Content-Type:application/json" --data @$TRAVIS_BUILD_DIR/.test_util/test.json http://arlington3.mit.edu:3003/  
   # - curl -H "Content-Type:application/json" --data @$TRAVIS_BUILD_DIR/travis.json http://arlington3.mit.edu:3003/    
-  # - curl -H "Content-Type:application/json" --data @$TRAVIS_BUILD_DIR/combined.json http://arlington3.mit.edu:3003/      
+  # - curl -H "Content-Type:application/json" --data @$TRAVIS_BUILD_DIR/data_integration.json http://arlington3.mit.edu:3003/      
 notifications:
   webhooks: http://arlington3.mit.edu:3003/
 addons:
   artifacts:
     paths:
-    - $TRAVIS_BUILD_DIR/.config/test.json
+    - $TRAVIS_BUILD_DIR/.test_util/test.json
     - $TRAVIS_BUILD_DIR/travis.json
-    - $TRAVIS_BUILD_DIR/.config/combined.json    
+    - $TRAVIS_BUILD_DIR/.test_util/data_integration.json    

@@ -1,0 +1,74 @@
+{
+  "stats": {
+    "suites": 8,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2016-09-25T04:26:03.601Z",
+    "end": "2016-09-25T04:26:03.609Z",
+    "duration": 8
+  },
+  "tests": [
+    {
+      "title": "Test for String",
+      "fullTitle": "BDD First Name and Last Name Test for String",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Test for Peter Parker",
+      "fullTitle": "BDD First Name and Last Name Test for Peter Parker",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Test for Length of 12",
+      "fullTitle": "BDD First Name and Last Name Test for Length of 12",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Test for Length of 3",
+      "fullTitle": "BDD Types of Cheese Test for Length of 3",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "Test for String",
+      "fullTitle": "BDD First Name and Last Name Test for String",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Test for Peter Parker",
+      "fullTitle": "BDD First Name and Last Name Test for Peter Parker",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Test for Length of 12",
+      "fullTitle": "BDD First Name and Last Name Test for Length of 12",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Test for Length of 3",
+      "fullTitle": "BDD Types of Cheese Test for Length of 3",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}

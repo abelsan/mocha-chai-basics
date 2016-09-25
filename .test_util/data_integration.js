@@ -1,7 +1,7 @@
 var fs = require('fs');
 
 // the test results
-var test = fs.readFileSync('.config/test.json');
+var test = fs.readFileSync('.test_util/test.json');
 var test = JSON.parse(test);
 
 // the test results
@@ -12,4 +12,4 @@ var travis = JSON.parse(travis);
 test.travis = travis;
 
 //Serialize as JSON and Write it to a file
-fs.writeFileSync('.config/combined.json', JSON.stringify(test));
+fs.writeFileSync('.test_util/data_integration.json', JSON.stringify(test));

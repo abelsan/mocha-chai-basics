@@ -2,18 +2,18 @@
   "stats": {
     "suites": 8,
     "tests": 4,
-    "passes": 3,
+    "passes": 4,
     "pending": 0,
-    "failures": 1,
-    "start": "2016-09-21T20:58:24.693Z",
-    "end": "2016-09-21T20:58:24.705Z",
-    "duration": 12
+    "failures": 0,
+    "start": "2016-09-25T02:33:29.552Z",
+    "end": "2016-09-25T02:33:29.560Z",
+    "duration": 8
   },
   "tests": [
     {
       "title": "Test for String",
       "fullTitle": "BDD First Name and Last Name Test for String",
-      "duration": 2,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -25,17 +25,11 @@
       "err": {}
     },
     {
-      "title": "Test for Length of 10",
-      "fullTitle": "BDD First Name and Last Name Test for Length of 10",
-      "duration": 2,
+      "title": "Test for Length of 12",
+      "fullTitle": "BDD First Name and Last Name Test for Length of 12",
+      "duration": 1,
       "currentRetry": 0,
-      "err": {
-        "message": "expected 'peter parker' to have a length of 10 but got 12",
-        "showDiff": false,
-        "actual": 12,
-        "expected": 10,
-        "stack": "AssertionError: expected 'peter parker' to have a length of 10 but got 12\n    at Context.<anonymous> (.coverage/test.js:31:20)"
-      }
+      "err": {}
     },
     {
       "title": "Test for Length of 3",
@@ -46,26 +40,12 @@
     }
   ],
   "pending": [],
-  "failures": [
-    {
-      "title": "Test for Length of 10",
-      "fullTitle": "BDD First Name and Last Name Test for Length of 10",
-      "duration": 2,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected 'peter parker' to have a length of 10 but got 12",
-        "showDiff": false,
-        "actual": 12,
-        "expected": 10,
-        "stack": "AssertionError: expected 'peter parker' to have a length of 10 but got 12\n    at Context.<anonymous> (.coverage/test.js:31:20)"
-      }
-    }
-  ],
+  "failures": [],
   "passes": [
     {
       "title": "Test for String",
       "fullTitle": "BDD First Name and Last Name Test for String",
-      "duration": 2,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -73,6 +53,13 @@
       "title": "Test for Peter Parker",
       "fullTitle": "BDD First Name and Last Name Test for Peter Parker",
       "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Test for Length of 12",
+      "fullTitle": "BDD First Name and Last Name Test for Length of 12",
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },

@@ -27,7 +27,7 @@ notifications:
   webhooks: http://arlington3.mit.edu:3003/
 addons:
   artifacts:
-    # ...
+    # ... comments start with the pound sign
     paths:
-    - $TRAVIS_BUILD_DIR/.coverage/test.json
+    - $TRAVIS_BUILD_DIR/.config/test.json
     - $TRAVIS_BUILD_DIR/travis.json

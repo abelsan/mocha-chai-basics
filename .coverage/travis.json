@@ -1,0 +1,17 @@
+{
+  "TRAVIS_BRANCH": "master",
+  "TRAVIS_BUILD_DIR": "/home/travis/build/abelsan/mocha-chai-basics",
+  "TRAVIS_BUILD_ID": "162487707",
+  "TRAVIS_BUILD_NUMBER": "23",
+  "TRAVIS_COMMIT": "f7e96b09187345de9efcb7d6e459566b7b079f32",
+  "TRAVIS_COMMIT_RANGE": "4dfb1555eb38...f7e96b091873",
+  "TRAVIS_EVENT_TYPE": "push",
+  "TRAVIS_JOB_ID": "162487709",
+  "TRAVIS_JOB_NUMBER": "23.1",
+  "TRAVIS_OS_NAME": "linux",
+  "TRAVIS_PULL_REQUEST": "false",
+  "TRAVIS_REPO_SLUG": "abelsan/mocha-chai-basics",
+  "TRAVIS_SECURE_ENV_VARS": "true",
+  "TRAVIS_TEST_RESULT": "0",
+  "TRAVIS_TAG": ""
+}

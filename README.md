@@ -1,2 +1,2 @@
-# mocha-chai-basics V0.0.6
+# mocha-chai-basics V0.0.7
 A basic project with Mocha Chai testing

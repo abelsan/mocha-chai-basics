@@ -22,6 +22,7 @@ after_script:
   - echo \"TRAVIS_SECURE_ENV_VARS\":\"$TRAVIS_SECURE_ENV_VARS\", >> travis.json
   - echo \"TRAVIS_TEST_RESULT\":\"$TRAVIS_TEST_RESULT\", >> travis.json
   - echo \"TRAVIS_TAG\":\"$TRAVIS_TAG\" >> travis.json
+  - echo \"TRAVIS_EMAIL\":\"$(git log -1 $TRAVIS_COMMIT --pretty=%aE)\" >> travis.json
   - echo } >> travis.json
   # --------------------------------------------------
   # combine travis info with test info, 
@@ -34,9 +35,9 @@ after_script:
   # - curl -H "Content-Type:application/json" --data @$TRAVIS_BUILD_DIR/.test_util/test.json http://arlington3.mit.edu:3003/  
   # - curl -H "Content-Type:application/json" --data @$TRAVIS_BUILD_DIR/travis.json http://arlington3.mit.edu:3003/    
   # - curl -H "Content-Type:application/json" --data @$TRAVIS_BUILD_DIR/data_integration.json http://arlington3.mit.edu:3003/      
-  - curl -H "Content-Type:application/json" --data @$TRAVIS_BUILD_DIR/.test_util/data_integration.json http://162.243.185.121:3000/
-notifications:
-  webhooks: http://162.243.185.121:3001/
+  # - curl -H "Content-Type:application/json" --data @$TRAVIS_BUILD_DIR/.test_util/data_integration.json http://162.243.185.121:3000/
+#notifications:
+#  webhooks: http://162.243.185.121:3001/
 addons:
   artifacts:
     paths:
